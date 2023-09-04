@@ -1,0 +1,16 @@
+{
+    "name": "AlephVault.Unity.EVMGames.LocalStorage.Samples",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a459a3e4a233e36338af55dcd7947325"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

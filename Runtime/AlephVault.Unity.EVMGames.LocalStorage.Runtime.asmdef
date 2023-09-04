@@ -1,0 +1,16 @@
+{
+    "name": "AlephVault.Unity.EVMGames.LocalStorage.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f3e508bb81e3448249582d03b9396c93"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,16 @@
+{
+  "name": "com.alephvault.unity.evmgames.localstorage",
+  "version": "0.0.1",
+  "displayName": "Aleph Vault - Unity - EVMGames.LocalStorage",
+  "description": "A definition / implementation for local accounts' storage (incl. passphrase encryption).",
+  "unity": "2020.3",
+  "dependencies": {
+    "com.alephvault.unity.evmgames": "0.0.2",
+    "com.unity.nuget.newtonsoft-json": "2.0.0"
+  },
+  "author": {
+    "name": "Aleph Vault",
+    "email": "info@alephvault.com",
+    "url": "http://www.alephvault.com"
+  }
+}
