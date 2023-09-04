@@ -5,8 +5,7 @@
   "description": "A definition / implementation for local accounts' storage (incl. passphrase encryption).",
   "unity": "2020.3",
   "dependencies": {
-    "com.alephvault.unity.evmgames": "0.0.2",
-    "com.unity.nuget.newtonsoft-json": "2.0.0"
+    "com.alephvault.unity.evmgames": "0.0.2"
   },
   "author": {
     "name": "Aleph Vault",
