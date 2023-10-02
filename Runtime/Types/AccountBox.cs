@@ -46,6 +46,7 @@ namespace AlephVault.Unity.EVMGames.LocalStorage
                 BigInteger privateKeyValue;
                 try
                 {
+                    if (privateKey.StartsWith("0x")) privateKey = privateKey.Substring(2);
                     privateKeyValue = BigInteger.Parse("0" + privateKey, NumberStyles.AllowHexSpecifier);
                     if (privateKeyValue.CompareTo(1) < 0 || privateKeyValue.CompareTo(ECOrder) >= 0)
                     {
