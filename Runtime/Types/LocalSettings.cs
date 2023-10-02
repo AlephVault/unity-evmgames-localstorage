@@ -18,10 +18,7 @@ namespace AlephVault.Unity.EVMGames.LocalStorage
         {
             // This is a fixed amount of different boxes.
             public const int NumBoxes = 64;
-
-            // This is a fixed passphrase used to initialize fake settings.
-            private const string FakePassphrase = "Passphrase for random initialization";
-
+            
             // Each account is stored here.
             [JsonProperty("account_boxes")]
             private AccountBox[] accountBoxes;
@@ -71,7 +68,10 @@ namespace AlephVault.Unity.EVMGames.LocalStorage
                 settings.accountBoxes = Enumerable.Range(1, NumBoxes).Select(_ => new AccountBox()).ToArray();
                 foreach (AccountBox box in settings.accountBoxes)
                 {
-                    box.SetEncrypted(MakeRandomPrivateKey(), FakePassphrase);
+                    // Yes, we generate another private key just for the sake
+                    // of being random data to make a fake passphrase. So these
+                    // account becomes inaccessible / deniable.
+                    box.SetEncrypted(MakeRandomPrivateKey(), MakeRandomPrivateKey());
                 }
 
                 return settings;
@@ -102,7 +102,10 @@ namespace AlephVault.Unity.EVMGames.LocalStorage
             /// <param name="boxIndex">The vox index</param>
             public void Reset(int boxIndex)
             {
-                SetEncrypted(boxIndex, MakeRandomPrivateKey(), FakePassphrase);
+                // Yes, we generate another private key just for the sake
+                // of being random data to make a fake passphrase. So these
+                // account becomes inaccessible / deniable.
+                SetEncrypted(boxIndex, MakeRandomPrivateKey(), MakeRandomPrivateKey());
             }
 
             /// <summary>
